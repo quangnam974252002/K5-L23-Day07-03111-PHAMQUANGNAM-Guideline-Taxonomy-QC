@@ -1,11 +1,10 @@
-# Guideline gán nhãn — v0.1-103 — Thành viên 103
+# Guideline agreed ver 1.0
 
 > Bản guideline cá nhân của thành viên **103** sau khi khảo sát toàn bộ 40 bức ảnh đường phố trong `data/images/`.
 > Dùng để đối chiếu và đóng góp trong buổi họp thống nhất quy chuẩn nhóm (Pha 2).
 
-- Phiên bản: v0.1-103
+- Phiên bản: v1.0
 - Ngày: 2026-11-16
-- Người viết: Thành viên 103
 
 ---
 
@@ -25,13 +24,12 @@
 
 | Lớp | Định nghĩa (một câu) | Ví dụ cụ thể | Phản ví dụ / Dễ nhầm với |
 |---|---|---|---|
-| `car` | Ô tô con, xe du lịch, sedan, hatchback, SUV từ 4 đến 9 chỗ phục vụ chở người. | Xe con ở `img_001.jpg`, `img_003.jpg`, ô tô trên giàn xe tải `img_002.jpg`. | Xe thùng kín vận chuyển (`van`), xe bán tải lớn có thùng hàng (`truck`), xe đồ chơi (`img_038.jpg`). |
-| `truck` | Xe tải chở hàng, xe đầu kéo container, xe bồn hoặc xe chuyên dụng có cabin và thùng hàng/giá chở riêng biệt. | Xe chở ô tô 2 tầng ở `img_002.jpg`, xe tải lớn ở `img_005.jpg`. | Xe van thân liền khối (`van`), xe con (`car`). |
-| `van` | Xe tải nhẹ thân liền khối hoặc xe chở đồ cỡ nhỏ có khoang hàng kín liền mạch với cabin. | Xe van giao hàng ở `img_010.jpg`, `img_023.jpg`. | Xe ô tô du lịch 7 chỗ (`car`), xe buýt (`bus`). |
-| `motorcycle` | Phương tiện cơ giới hai bánh có gắn động cơ (xe máy, xe mô tô, xe gắn máy). | Xe máy di chuyển ở `img_001.jpg`, `img_008.jpg`, `img_028.jpg`. | Xe đạp, xích lô không động cơ (`img_006.jpg`, `img_039.jpg` -> không gán hoặc vào `ignore_region`), xe 3 bánh tuk-tuk. |
-| `person` | Người thật đang tham gia giao thông (người đi bộ, người đứng, người ngồi trên xe máy, xe đạp). | Người đi bộ ở `img_006.jpg`, người lái xe máy ở `img_001.jpg`, `img_008.jpg`. | Tượng đồng (`img_011.jpg`), tượng đá điêu khắc (`img_017.jpg`), ma-nơ-canh trong tủ kính (`img_033.jpg`), hình in quảng cáo (`img_018.jpg`). |
+| `car` | Ô tô con, xe du lịch, sedan, hatchback, SUV từ 4 đến 9 chỗ phục vụ chở người. | ô tô con trên giàn xe tải `img_002.jpg`. | Xe thùng kín vận chuyển (`van`), xe bán tải lớn có thùng hàng (`truck`), xe đồ chơi (`img_038.jpg`). |
+| `truck` | Xe tải chở hàng, xe đầu kéo container, xe bồn hoặc xe chuyên dụng có cabin và thùng hàng/giá chở riêng biệt. | Xe chở ô tô 2 tầng ở `img_002.jpg`, xe tải ở `img_001.jpg`. | Xe van thân liền khối (`van`), xe con (`car`). |
+| `van` | Xe tải nhẹ thân liền khối hoặc xe chở đồ cỡ nhỏ có khoang hàng kín liền mạch với cabin. | Xe van `img_005.jpg`, `img_016.jpg`. | Xe ô tô du lịch 7 chỗ (`car`), xe buýt (`bus`). |
+| `motorcycle` | Phương tiện cơ giới hai bánh có gắn động cơ (xe máy, xe mô tô, xe gắn máy). | Xe máy di chuyển ở `img_003.jpg`, `img_030.jpg`. | Xe đạp, xích lô không động cơ (`img_006.jpg`, `img_039.jpg` -> không gán hoặc vào `ignore_region`). |
+| `person` | Người thật đang hoặc không tham gia giao thông (người đi bộ, người đứng, người ngồi trên xe máy, xe đạp).Không bao gồm vật dụng cá nhân như ô, balo, túi xách | Người đi bộ ở `img_014.jpg`, người lái xe máy ở `img_005.jpg`, `img_008.jpg`. | Tượng đồng (`img_011.jpg`), tượng đá điêu khắc (`img_017.jpg`), ma-nơ-canh trong tủ kính (`img_033.jpg`), hình in quảng cáo (`img_018.jpg`). |
 | `bus` *(Đề xuất mới)* | Xe buýt công cộng, xe khách lớn chở nhiều hành khách. | Xe buýt ở `img_009.jpg`, `img_031.jpg`, `img_037.jpg`, `img_040.jpg`. | Xe van (`van`), xe tải (`truck`). |
-| `tuk_tuk` *(Đề xuất mới)* | Phương tiện giao thông ba bánh có động cơ, có khung/mái che chở khách hoặc chở hàng. | Xe tuk-tuk ở `img_004.jpg`, `img_016.jpg`, `img_035.jpg`. | Xe máy (`motorcycle`), ô tô con (`car`). |
 | `ignore_region` | Vùng đánh dấu khu vực phức tạp không gán từng đối tượng đơn lẻ; việc sót vật trong vùng này không tính là lỗi. | Cụm phương tiện/người dày đặc ở quá xa hậu cảnh, vật cao $< 20\text{ px}$. | Các phương tiện hoặc người đứng đơn lẻ nhìn rõ ở tiền cảnh. |
 
 **Quy định đối với vật ngoài phạm vi taxonomy:**
@@ -44,7 +42,7 @@
 
 | Thuộc tính | Kiểu | Các mức | Định nghĩa và ngưỡng đo lường cụ thể |
 |---|---|---|---|
-| `occluded_level` | Select | `0`, `1`, `2`, `3` | Mức độ diện tích nhìn thấy của vật bị che khuất bởi vật thể khác:<br>• **`0`**: Hoàn toàn không bị che (0%).<br>• **`1`**: Bị che nhẹ từ 1% đến 30% diện tích.<br>• **`2`**: Bị che đáng kể từ 31% đến 70% diện tích.<br>• **`3`**: Bị che nặng trên 70% diện tích (nhưng các đặc điểm nhận dạng cốt lõi vẫn đủ để người nhìn khẳng định chắc chắn lớp của vật). |
+| `occluded_level` | Select | `0`, `1`, `2` | Mức độ diện tích nhìn thấy của vật bị che khuất bởi vật thể khác:<br>• Mức bị che: 0 là thấy rõ 0-30 %, 1 là bị che ít 30-80% , 2: là bị che nhiều hơn 80%  |
 | `truncated` | Select | `no`, `yes` | Vật có bị cắt ngang bởi mép ảnh hay không:<br>• **`no`**: Vật nằm trọn vẹn trong khung hình.<br>• **`yes`**: Một phần thân của vật bị cắt bởi mép biên ảnh (trên, dưới, trái hoặc phải). |
 | `can_review` | Checkbox | `false`, `true` | Đánh dấu ca khó/mơ hồ:<br>• Tick `true` khi người gán lưỡng lự về lớp hoặc ranh giới bbox để đưa ra hội đồng calibration xem xét lại. |
 
@@ -60,6 +58,9 @@
      - 1 box cho `person`: Ôm sát toàn bộ cơ thể người lái từ đỉnh mũ bảo hiểm/đầu đến hết gót chân.
      - 1 box cho `motorcycle`: Ôm sát toàn bộ chiếc xe máy từ tay lái, thân xe đến hết mép bánh xe.
      - Hai box này sẽ giao nhau (overlap) ở vùng người ngồi lên yên xe.
+   - **Vẽ phương tiện ba bánh có động cơ**:
+      - Xe Tuk, rickshaw, xe 3 bánh được tính là motorcycle
+      - Xe mô tô thùng, xe máy có kèm thêm một thùng chở khách, vẫn phải dán nhãn cả thùng chở
 3. **Quy tắc Xe tải chở ô tô (`img_002.jpg`)**:
    - Vẽ 1 box `truck` bao toàn bộ thân xe tải bao gồm cả cabin và toàn bộ hệ thống giàn/giá đỡ hàng 2 tầng.
    - Mỗi chiếc ô tô con chở trên giàn giá đỡ nếu nhìn thấy rõ được vẽ thêm 1 box `car` riêng biệt, gán thuộc tính `occluded_level` phù hợp (thường là 1 hoặc 2 do bị các thanh giàn che).
@@ -70,7 +71,7 @@
    - *Chân dung trên biển quảng cáo / áp phích*: `img_018.jpg` -> **Không gán**.
    - *Hình ảnh phản chiếu trong gương chiếu hậu*: `img_020.jpg` -> **Không gán**.
 5. **Quy tắc vật quá nhỏ**:
-   - Bỏ qua các vật có chiều cao hộp $< 20\text{ px}$. Nếu có nhiều vật nhỏ tụ tập thành đám đông ở xa thì khoanh bằng một box `ignore_region`.
+   - Bỏ qua các vật có chiều cao hộp $< 20\text{ px}$, che hơn 80% đến mức ko nhận dạng. Nếu có nhiều vật nhỏ tụ tập thành đám đông ở xa thì khoanh bằng một box `ignore_region`.
 
 ---
 
@@ -79,7 +80,6 @@
 | Ảnh | Tình huống phát sinh | Mã quy tắc đề xuất | Quyết định của tôi | Lý do kỹ thuật |
 |---|---|---|---|---|
 | `img_002.jpg` | Xe tải chuyên dụng chở nhiều ô tô con trên giàn đỡ 2 tầng. | `R-TRUCK-CARGO` | 1 box `truck` bao trọn xe tải + giàn đỡ; các ô tô trên giàn gán từng box `car` riêng biệt. | Mô hình xe tự lái cần nhận biết cả khối xe tải lớn lẫn các ô tô riêng lẻ để tính toán không gian va chạm. |
-| `img_004.jpg` | Phương tiện 3 bánh Tuk-tuk chở khách trên đường. | `R-TUKTUK` | Gán lớp mới `tuk_tuk`. Nếu chưa có lớp thì tạm tick `can_review`. | Kết cấu 3 bánh và cabin mở không thể gán vào `car` hay `motorcycle` mà không làm sai lệch phân phối dữ liệu. |
 | `img_009.jpg` | Xe buýt công cộng cỡ lớn di chuyển trên đường. | `R-BUS` | Gán lớp mới `bus`. | Kích thước và động học khác biệt lớn so với xe con (`car`) và xe thùng (`van`). |
 | `img_011.jpg` | Tượng đồng hình người cưỡi ngựa/xe giữa quảng trường. | `R-STATUE-IGNORE` | Không gán box. | Không phải thực thể sống hay phương tiện có khả năng di chuyển gây nguy hiểm giao thông. |
 | `img_018.jpg` | Khuôn mặt người in kích thước lớn trên biển hiệu quảng cáo. | `R-BILLBOARD-IGNORE` | Không gán box. | Tránh hiện tượng mô hình nhận diện biển quảng cáo thành người đi bộ cản đường. |
@@ -87,7 +87,6 @@
 | `img_027.jpg` | Tác phẩm điêu khắc nghệ thuật hình xe bán tải. | `R-STATUE-IGNORE` | Không gán box. | Là vật trang trí cố định, không phải xe cơ giới lưu thông. |
 | `img_033.jpg` | Ma-nơ-canh hình người mặc trang phục trong tủ kính cửa hàng. | `R-MANNEQUIN-IGNORE` | Không gán box. | Vật trưng bày tĩnh trong nhà, gán nhầm sẽ làm sai lệch bộ dữ liệu người đi bộ. |
 | `img_038.jpg` | Xe ô tô mô hình đồ chơi xếp trong tủ kính. | `R-TOY-IGNORE` | Không gán box. | Kích thước thực tế chỉ vài chục cm và nằm trong tủ trưng bày, không phải phương tiện giao thông. |
-
 ---
 
 ## 5. QC và quản lý phiên bản
