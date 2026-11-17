@@ -7,7 +7,7 @@
     {"name": "van", "definition": "Xe thùng kín cỡ nhỏ."},
     {"name": "motorcycle", "definition": "Xe máy, mô tô."},
     {"name": "person", "definition": "Người đi bộ hoặc người ngồi trên xe."},
-    {"name": "bus", "definition": "Xe khách lớn chở nhiều hành khách, xe buýt."}
+    {"name": "bus", "definition": "Xe khách lớn chở nhiều hành khách, xe buýt."},
     {"name": "ignore_region", "definition": "Vùng đánh dấu khu vực phức tạp không gán từng đối tượng đơn lẻ, bỏ sót ở đây không tính là lỗi."}
   ],
   "attributes": [
