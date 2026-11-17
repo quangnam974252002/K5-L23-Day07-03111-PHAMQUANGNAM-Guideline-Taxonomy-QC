@@ -1,0 +1,7 @@
+case_id,image,quyet_dinh,quy_tac_ghi_vao_guideline,phien_ban_guideline,nguoi_chot,phieu_sua,kiem_lai,pham_vi
+C001,img_005.jpg,Xac nhan giu lop car va ha co can_review,R-EDGE-TRUNCATED,v1.1,102,ha_co_can_review,102: da kiem tra hop le,anh
+C002,img_005.jpg,Xac nhan giu lop car va ha co can_review,R-EDGE-TRUNCATED,v1.1,102,ha_co_can_review,102: da kiem tra hop le,anh
+C003,img_011.jpg,Xac nhan giu lop motorcycle va ha co can_review,R-CUSTOM-MOTO,v1.1,102,ha_co_can_review,102: da kiem tra hop le,anh
+C004,img_011.jpg,Xac nhan giu lop motorcycle va ha co can_review,R-CUSTOM-MOTO,v1.1,102,ha_co_can_review,102: da kiem tra hop le,anh
+C005,img_012.jpg,Xac nhan giu lop car va ha co can_review,R-PICKUP-CAR,v1.1,102,ha_co_can_review,102: da kiem tra hop le,anh
+C006,img_012.jpg,Xac nhan giu lop car va ha co can_review,R-PICKUP-CAR,v1.1,102,ha_co_can_review,102: da kiem tra hop le,anh

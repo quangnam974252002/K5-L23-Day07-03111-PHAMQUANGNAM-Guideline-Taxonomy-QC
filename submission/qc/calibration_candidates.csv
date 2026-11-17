@@ -1,0 +1,7 @@
+case_id,image,issue_type,annotators,class_a,class_b,box_a,box_b,iou,ghi_chu_tu_dong
+C001,img_005.jpg,co_can_review,101,car,,"[0,74,71,95]",,,"101 gắn cờ can_review (ca mơ hồ, cần chốt quy tắc)"
+C002,img_005.jpg,co_can_review,105,car,,"[0,74,71,95]",,,"105 gắn cờ can_review (ca mơ hồ, cần chốt quy tắc)"
+C003,img_011.jpg,co_can_review,101,motorcycle,,"[282,364,330,276]",,,"101 gắn cờ can_review (ca mơ hồ, cần chốt quy tắc)"
+C004,img_011.jpg,co_can_review,102,motorcycle,,"[282,364,330,276]",,,"102 gắn cờ can_review (ca mơ hồ, cần chốt quy tắc)"
+C005,img_012.jpg,co_can_review,101,car,,"[294,246,666,394]",,,"101 gắn cờ can_review (ca mơ hồ, cần chốt quy tắc)"
+C006,img_012.jpg,co_can_review,102,car,,"[294,246,666,394]",,,"102 gắn cờ can_review (ca mơ hồ, cần chốt quy tắc)"
